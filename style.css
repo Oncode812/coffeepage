@@ -1,0 +1,148 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 7%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.navlinks{
+    display:flex;
+    gap: 50px;
+}
+.navlinks li a{
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.5s ease;
+}
+.nav-btn .navbutton{
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+
+}
+.nav-btn .navbutton:hover{
+    transform: translateY(5px);
+    border: 2px solid #ae8957;
+    color: #ae8957;;
+}
+.navlinks li a:hover{
+    transform:translateX(5px);
+    color:#ae8957 ;
+}
+
+#hero{
+ height: 100vh;
+ width: 100%;   
+background-image: url(bg.png);
+background-position: center;
+background-size: cover;
+position: relative;
+padding: 0 7%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+align-items: center;
+gap: 1rem;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+.hero-text h5{
+color: #fff;
+font-size: 18px;
+margin-bottom: 15px;
+}
+.hero-text h1{
+    color: #fff;
+ font-size: 6.6rem;
+}
+.hero-text p{
+    color: #fff;
+   font-size: 1rem;
+    line-height: 30px;
+   margin-top: 15px;
+   font-weight: 400;
+}
+.herobtn p a{
+padding: 15px 25px;
+background-color: #ae8957;
+border-radius: 5px;
+border: none;
+color: #fff;
+}
+.herobtn p span{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px;
+    color: #fff;
+}
+.herobtn{
+    display: flex;
+    align-items:center ;
+    margin-top: 40px;
+}
+.herobtn p{
+    color: #ae8957;
+}
+
+@media  screen and (max-width:1240px) {
+    #hero{
+
+display: grid;
+grid-template-columns: 1fr;
+
+}
+.hero-text{
+    margin-top: 200px;
+}
+}
+@media screen and (max-width:800px){
+    .navlinks{
+        display: none;
+    }
+}
+@media screen and (max-width:620px){
+    .hero-text h1{
+ 
+ font-size: 4.6rem;
+}
+.hero-text p{
+    color: #fff;
+   font-size: 0.88rem;
+    
+}
+}
+@media screen and (max-width:522px){
+    .hero-text h1{
+ 
+ font-size: 3.6rem;
+}
+.hero-text p{
+    color: #fff;
+   font-size: 0.7rem;
+    
+}
+}
